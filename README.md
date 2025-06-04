@@ -54,10 +54,20 @@ Protected routes require JWT in header:
 * `PUT /api/v1/users/block/:id` - Block user
 * `PUT /api/v1/users/unblock/:id` - Unblock user
 
-### Categories
+Categories API Endpoints
+POST /api/v1/category — Create a new category
+Requires authentication
 
-* `POST /api/v1/categories` - Create a category
-* `GET /api/v1/categories` - Get all categories
+GET /api/v1/categories — Get all categories
+
+GET /api/v1/categories/:id — Get details of a specific category by ID
+
+PUT /api/v1/categories/:id — Update a category by ID
+Requires authentication
+
+DELETE /api/v1/categories/:id — Delete a category by ID
+Requires authentication
+
 
 ### Posts & Comments
 
